@@ -49,37 +49,37 @@ const Page = () => {
     };
 
     return (
-        <>
-        <div className='w-full h-[25rem] max-w-lg px-10 py-8 mx-auto bg-[#f8f8f8] rounded-lg shadow-xl'>
-            <div className='max-w-md mx-auto space-y-6'>
-                
-                <div  className='flex items-center text-gray-600 w-full border-b overflow-hidden mt-32 md:mt-0 mb-5 mx-auto'>
-                    <div className='flex items-center py-3'>
-                        <div className='font-bold text-2xl'>
-                            <h1 className="">Heat Engineer Stock Trading</h1>
+        <div className="flex justify-evenly py-12">
+            <div className=' h-[25rem] max-w-lg px-10 py-8 bg-[#f8f8f8] rounded-lg shadow-xl'>
+                <div className='max-w-md mx-auto space-y-6'>
+                    
+                    <div  className='flex items-center text-gray-600 w-full border-b overflow-hidden mt-32 md:mt-0 mb-5 mx-auto'>
+                        <div className='flex items-center py-3'>
+                            <div className='font-bold text-2xl'>
+                                <h1 className="">Heat Engineer Stock Trading</h1>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div className="p-5 md:p-0 w-full transform transition duration-300 ease-in-out pb-10">
-                    <StockDisplay currentPrice={currentPrice} />
-                    <Portfolio accountBalance={accountBalance} stocksOwned={stocksOwned} 
-                     usedBalancePercentage={parseFloat(
-                        (100 - Number(remainingBalancePercentage || 0)).toFixed(1)
-                      )}
-                    />
-                    <TransactionForm onBuy={handleBuy} onSell={handleSell} />
-                </div>
+                    <div className="p-5 md:p-0 w-full transform transition duration-300 ease-in-out pb-10">
+                        <StockDisplay currentPrice={currentPrice} />
+                        <Portfolio accountBalance={accountBalance} stocksOwned={stocksOwned} 
+                        usedBalancePercentage={parseFloat(
+                            (100 - Number(remainingBalancePercentage || 0)).toFixed(1)
+                        )}
+                        />
+                        <TransactionForm onBuy={handleBuy} onSell={handleSell} />
+                    </div>
 
+                </div>
+            
             </div>
-           
-        </div>
-        <div className='w-full h-auto max-w-lg px-10 py-8 mx-auto bg-[#f8f8f8] rounded-lg shadow-xl'>
-            <div className='max-w-md mx-auto space-y-6'>
-                <StockPriceHistory />
+            <div className=' h-auto max-w-lg px-10 py-8 bg-[#f8f8f8] rounded-lg shadow-xl'>
+                <div className='max-w-md mx-auto space-y-6'>
+                    <StockPriceHistory />
+                </div>
             </div>
         </div>
-        </>
     );
 };
 

@@ -46,7 +46,7 @@ export default function Layout({
       </div>
 
       <main className="justify-center">
-          <div className="container mx-auto w-80 py-12">
+          <div className="">
             {children}
           </div>
       </main>
