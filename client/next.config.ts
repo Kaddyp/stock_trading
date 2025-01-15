@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     config.experiments = { ...config.experiments, topLevelAwait: true };
     return config;
   },
+  distDir: 'out',
 };
 
 export default nextConfig;
