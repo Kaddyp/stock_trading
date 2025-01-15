@@ -1,5 +1,6 @@
+import SignupForm from './form';
 import Link from 'next/link';
-import { SignupForm } from '@/app/(public)/signup/form';
+
 export default function Page() {
   return (
     <div className="card mb-3">
@@ -10,10 +11,10 @@ export default function Page() {
       <div className="card-body mt-6">
         <SignupForm />
       </div>
-      <div className="mt-6 text-center text-sm">
+      <div className="mt-4 text-center text-sm">
         Already have an account?{' '}
         <Link className="underline" href="/login">
-          Login
+          Sign In
         </Link>
       </div>
     </div>

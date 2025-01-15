@@ -1,8 +1,13 @@
+import next from 'next';
 import { app } from './app';
 import { connectProducer } from './utils/config';
 import stockService from './services/stockService';
 import 'dotenv/config';
 import WebSocket from 'ws';
+
+const dev = process.env.NODE_ENV !== 'production';
+const nextApp = next({ dev });
+const handle = nextApp.getRequestHandler();
 
 // Port Number Setup 
 const PORT = process.env.APP_PORT || 8081;
@@ -53,5 +58,6 @@ const start = async () => {
     }
 
 };
+
   
 start();
