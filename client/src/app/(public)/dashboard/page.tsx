@@ -74,7 +74,7 @@ const Page = () => {
                 </div>
             
             </div>
-            <div className=' h-auto max-w-lg px-10 py-8 bg-[#f8f8f8] rounded-lg shadow-xl'>
+            <div className='w-[450px] h-auto max-w-lg px-10 py-8 bg-[#f8f8f8] rounded-lg shadow-xl'>
                 <div className='max-w-md mx-auto space-y-6'>
                     <StockPriceHistory />
                 </div>

@@ -59,7 +59,7 @@ const StockPriceHistory = () => {
 
       <div className="flex flex-col gap-4 mb-5">     
         <label className="block">
-          <span className="text-gray-700">From Date:</span>
+          <span className="text-gray-700 font-medium">From Date:</span>
           <input
             type="date"
             value={fromDate}
@@ -68,7 +68,7 @@ const StockPriceHistory = () => {
           />
         </label>
         <label className="block">
-          <span className="text-gray-700">From Time (HH:MM:SS):</span>
+          <span className="text-gray-700 font-medium">From Time (HH:MM:SS):</span>
           <input
             type="time"
             step="1" // Allows seconds
@@ -80,7 +80,7 @@ const StockPriceHistory = () => {
 
         {/* To Date and Time */}
         <label className="block">
-          <span className="text-gray-700">To Date:</span>
+          <span className="text-gray-700 font-medium">To Date:</span>
           <input
             type="date"
             value={toDate}
@@ -89,7 +89,7 @@ const StockPriceHistory = () => {
           />
         </label>
         <label className="block">
-          <span className="text-gray-700">To Time (HH:MM:SS):</span>
+          <span className="text-gray-700 font-medium">To Time (HH:MM:SS):</span>
           <input
             type="time"
             step="1" // Allows seconds

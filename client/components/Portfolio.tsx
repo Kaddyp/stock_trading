@@ -11,15 +11,15 @@ const Portfolio: React.FC<PortfolioProps> = ({ accountBalance, stocksOwned, used
         <>
             <div className="flex items-center gap-x-5 py-3">
                 <ProgressCircle value={usedBalancePercentage} radius={50} strokeWidth={10}>
-                <span className="">
+                <span className="font-medium">
                     {usedBalancePercentage} %
                 </span>
                 </ProgressCircle>
                 <div>
-                <p className="">
+                <p className="font-medium">
                     Account Balance : ${accountBalance.toFixed(2)}
                 </p>
-                <p className="">
+                <p className="font-medium">
                     Stocks Owned: {stocksOwned}
                 </p>
                 </div>

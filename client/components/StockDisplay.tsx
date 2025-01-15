@@ -10,7 +10,7 @@ const StockDisplay: React.FC<StockDisplayProps> = ({ currentPrice }) => {
             {currentPrice !== null ? (
                 <p className="text-lg font-medium">Current Stock Price: ${currentPrice}</p>
             ) : (
-                <p>Loading stock price...</p>
+                <p className="font-medium">Loading stock price...</p>
             )}
         </div>
     );
